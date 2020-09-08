@@ -1,0 +1,42 @@
+{
+  "name": "gatsby-plugin-remove-dependency-transpilation",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Ward Peeters <ward@coding-tech.com>",
+  "license": "MIT",
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,md,mdx,json}": [
+      "prettier --write"
+    ]
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "cpy": "^3.1.1",
+    "del": "^5.1.0",
+    "execa": "^4.0.3",
+    "globby": "^11.0.1",
+    "husky": "^4.3.0",
+    "jest": "^26.4.2",
+    "lint-staged": "^10.3.0",
+    "prettier": "^2.1.1"
+  },
+  "dependencies": {
+    "dequal": "^2.0.2",
+    "dequel": "^1.0.1",
+    "move-file": "^2.0.0"
+  },
+  "files": [
+    "gatsby-node.js"
+  ],
+  "keywords": [
+    "gatsby",
+    "gatsby-plugin"
+  ]
+}
