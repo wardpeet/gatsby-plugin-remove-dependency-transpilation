@@ -29,7 +29,6 @@
   },
   "dependencies": {
     "dequal": "^2.0.2",
-    "dequel": "^1.0.1",
     "move-file": "^2.0.0"
   },
   "files": [
